@@ -1,0 +1,16 @@
+# Formatting rules for this repo (picked up automatically by clang-format,
+# and therefore by editors that format on save).
+BasedOnStyle: LLVM
+# Match the upstream code's 4-space indentation.
+IndentWidth: 4
+ColumnLimit: 80
+# Keep includes in the author's order.
+SortIncludes:
+  Enabled: false
+# Never rewrap comments: the guide comments contain hand-aligned tables
+# that reflowing would destroy. Keep comment lines <= 80 columns by hand.
+ReflowComments: Never
+AlignConsecutiveMacros:
+  Enabled: true
+AlignTrailingComments:
+  Kind: Always
